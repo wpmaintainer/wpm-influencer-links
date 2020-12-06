@@ -8,7 +8,7 @@
             "name": "wpmll_activate_page",
             "type": "true_false",
             "instructions": "Check this box to make this page become your Influencer Links page. This will override your site's theme and template specific to this page. You can create multiple pages with multiple settings, but in the free version of this plugin, the links are all the same.\r\n\r\nBe sure to use the page's Featured Image to set your avatar for the page. We recommend an image cropped 300x300 pixels.",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -375,5 +375,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1607203910
+    "modified": 1607285203
 }
