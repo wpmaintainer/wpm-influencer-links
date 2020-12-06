@@ -123,7 +123,7 @@ $theme = \get_field( 'wpmll_opt_theme' ) == 'Dark' ? 'dark' : 'light';
                         foreach ( $social as $network => $url ) 
                         {
                             $label = \esc_html( \WPM\Influencer_Links::get_social_label( $network ) );
-                            $out .= '<a href="' . \esc_url( $url ) .'" title="' . $label . '"><span>' 
+                            $out .= '<a target="_blank" href="' . \esc_url( $url ) .'" title="' . $label . '"><span>' 
                                  . $label . '</span></a> | ';
                         }
                         echo \rtrim( $out, ' | ' );
