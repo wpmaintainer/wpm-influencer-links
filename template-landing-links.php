@@ -14,7 +14,30 @@ $links = new \WP_Query([
     ]
 ]);
 
-$enable_hooks = !\get_field( 'wpmll_opt_disable_hooks' );
+if ( \get_field( 'wpmll_opt_disable_hooks' ) ) 
+{
+    \add_action( 'wp_enqueue_scripts', function(){
+        $wp_scripts = \wp_scripts();
+        $wp_styles = \wp_styles();
+
+        foreach ( $wp_scripts->registered as $wp_script )
+        {
+            if ( 'wpm-sil' !== \substr( $wp_script->handle, 0, 7 ) )
+            {
+                \wp_deregister_script( $wp_script->handle );
+            }
+        }
+
+        foreach ( $wp_styles->registered as $wp_style ) 
+        {
+            if ( 'wpm-sil' !== \substr( $wp_style->handle, 0, 7 ) )
+            {
+                wp_deregister_style( $wp_style->handle );
+            }
+        }
+
+    }, 9999 );
+}
 
 $theme = \get_field( 'wpmll_opt_theme' ) == 'Dark' ? 'dark' : 'light';
 
@@ -24,16 +47,13 @@ $theme = \get_field( 'wpmll_opt_theme' ) == 'Dark' ? 'dark' : 'light';
 <head>
     <title><?php \wp_title( '' ); ?></title>
     
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <?php
-        if ( $enable_hooks ) 
-            \wp_head(); 
+        \wp_head(); 
 
         echo \get_field( 'wpmll_opt_embed-head' ); 
     ?>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link href="<?php echo \plugins_url( '/assets/style.css', __FILE__ ); ?>" type="text/css" rel="stylesheet">
 
     <style type="text/css">
     body.wpm-ll-body {

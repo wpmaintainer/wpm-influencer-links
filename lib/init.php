@@ -34,6 +34,13 @@ class Influencer_Links
         \add_action( 'init', [ $this, 'register' ], 10 );
         \add_filter( 'template_include', [ $this, 'template_include' ], 10 );
         \add_filter( 'admin_notices', [ $this, 'admin_notices' ], 999 );
+        \add_filter( 'wp_enqueue_scripts', [ $this, 'wp_enqueue_scripts' ], 10 );
+    }
+
+    public function wp_enqueue_scripts()
+    {
+        \wp_enqueue_style( 'wpm-sil', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap', false, false, 'all' );
+        \wp_enqueue_style( 'wpm-sil-style', \plugins_url( '/assets/style.css', \dirname( __FILE__ ) ), false, false, 'all' );
     }
 
     public function admin_notices()
