@@ -2,7 +2,7 @@
 Contributors: theandystratton, wpmaintainer
 Tags: instagram, social media, influencer, influencer links, landing page, link landing page, link page
 Requires at least: 5.0
-Tested up to: 5.5.3
+Tested up to: 5.6
 Stable tag: 0.1
 Requires PHP: 7.2
 License: GPLv2 or later
