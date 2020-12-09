@@ -4,7 +4,7 @@ Tags: instagram, social media, influencer, influencer links, landing page, link 
 Requires at least: 5.0
 Tested up to: 5.5.3
 Stable tag: 0.1
-Requires PHP: 7.4
+Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
