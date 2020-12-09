@@ -57,5 +57,8 @@ Add and edit your links under the "Influencer Links" post type. Links are sorted
 
 == Changelog ==
 
+= 0.1.1 =
+* Allow PHP 7.2; testing up to WP 5.6
+
 = 0.1 =
-Initial release.
+* Initial release.
