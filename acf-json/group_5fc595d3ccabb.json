@@ -321,7 +321,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Yes, disable the default header\/footer WordPress hooks.",
+            "message": "Yes, disable all other CSS.",
             "default_value": 0,
             "ui": 0,
             "ui_on_text": "",
@@ -402,5 +402,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1607478869
+    "modified": 1607478983
 }
