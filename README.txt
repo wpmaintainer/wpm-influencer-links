@@ -36,13 +36,13 @@ We realize you may want to drop a Facebook pixel, Google Analytics, or something
 * Body: after the opening `<body>` tag
 * Footer: before the closing `</body>` tag
 
-There is also a checkbox available to disabled your site's default `wp_head`, `wp_body_open`, and `wp_footer` actions.
+There is also a checkbox available to disabled your site's default CSS.
 
 = The design looks really messed up. Can you help? =
 
-Edit your Influencer Links page, go to the Embeds tab, and check the box that says "es, disable the default header/footer WordPress hooks." and save the page.
+Edit your Influencer Links page, go to the Embeds tab, and check the box that says "Yes, disable all other CSS." and save the page.
 
-Keep in mind, this will disable any `wp_head`, `wp_body_open`, and `wp_footer` hooks on the loading of the Influencer Links page(s).
+Keep in mind, this will disable any CSS loaded by `wp_enqueue_style` on this page.
 
 = How do I re-order the links? =
 

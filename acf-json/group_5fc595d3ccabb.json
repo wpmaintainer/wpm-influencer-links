@@ -313,7 +313,7 @@
             "label": "Disable All Other CSS",
             "name": "wpmll_opt_disable_css",
             "type": "true_false",
-            "instructions": "Disables <code>wp_head<\/code> and <code>wp_footer<\/code>. If you're having odd display issues, this may make sense. \r\n\r\n<b>Remember,<\/b> if you leave this unchecked, any plugin CSS, Javascript, and tracking codes from your main website will be included here.",
+            "instructions": "Disables the loading of standard theme\/plugin CSS on this page. <b>Remember,<\/b> if you leave this unchecked, any theme and other plugin CSS files loaded on other pages will be loaded on this page.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -402,5 +402,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1607478669
+    "modified": 1607478869
 }
