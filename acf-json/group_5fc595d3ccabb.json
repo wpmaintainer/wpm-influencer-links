@@ -22,6 +22,33 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_5fd029c572b68",
+            "label": "Share the Love",
+            "name": "wpmll_opt_builtwith",
+            "type": "true_false",
+            "instructions": "Check this box to share the love and let the world know you're using our plugin!",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5fc595dd38b55",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Yes, share a small link on the bottom of my links page to support this plugin.",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5fc5966c38b56",
             "label": "Display Options",
             "name": "",
@@ -283,8 +310,8 @@
         },
         {
             "key": "field_5fc5a1acf5a3e",
-            "label": "Disable Default Styles\/Plugin Hooks",
-            "name": "wpmll_opt_disable_hooks",
+            "label": "Disable All Other CSS",
+            "name": "wpmll_opt_disable_css",
             "type": "true_false",
             "instructions": "Disables <code>wp_head<\/code> and <code>wp_footer<\/code>. If you're having odd display issues, this may make sense. \r\n\r\n<b>Remember,<\/b> if you leave this unchecked, any plugin CSS, Javascript, and tracking codes from your main website will be included here.",
             "required": 0,
@@ -375,5 +402,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1607285203
+    "modified": 1607477782
 }

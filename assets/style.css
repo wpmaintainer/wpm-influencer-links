@@ -15,12 +15,11 @@ section#wpm-ll-main article ol.wpm-ll-links li a span.wpm-ll-link-desc { display
 section#wpm-ll-main article ol.wpm-ll-links li a span.wpm-ll-link-desc p { margin: 0 1em; }
 section#wpm-ll-main article ol.wpm-ll-links li a span.wpm-ll-link-desc p:last-child { margin: 0; }
 section#wpm-ll-main footer#wpm-ll-footer .wpm-ll-footer-outro { padding: 1em 0; }
-
 section#wpm-ll-main .wpm-ll-edit a { display: inline-block; padding: .5em 1em; background: #333; color: #fff !important; border-radius: 5px; text-decoration: none; border: 1px solid #333; font-size: 12px; }
 section#wpm-ll-main .wpm-ll-edit a:hover { background: #fff; color: #222 !important; }
-
-section#wpm-ll-main .wpm-ll-built { text-align: center; font-size: 11px; padding-top: 2em; color: #000 !important; opacity: .25; }
+section#wpm-ll-main .wpm-ll-built { text-align: center; font-size: 11px; padding-top: 2em; color: #000 !important; opacity: .25; margin: 1em 0; }
 section#wpm-ll-main .wpm-ll-built a { color: #000 !important; text-decoration: none; }
+section#wpm-ll-main .wpm-ll-edit { margin: 1em 0; }
 body.wpm-ll-body-dark section#wpm-ll-main .wpm-ll-built,
 body.wpm-ll-body-dark section#wpm-ll-main .wpm-ll-built a { color: #fff !important; }
 

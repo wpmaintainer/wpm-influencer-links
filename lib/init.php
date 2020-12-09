@@ -39,6 +39,19 @@ class Influencer_Links
 
     public function wp_enqueue_scripts()
     {
+        // should we disable CSS?
+        if ( \get_field( 'wpmll_opt_disable_css' ) ) 
+        {
+            $wp_styles = \wp_styles();
+            foreach ( $wp_styles->registered as $wp_style ) 
+            {
+                if ( 'wpm-sil' !== \substr( $wp_style->handle, 0, 7 ) )
+                {
+                    wp_deregister_style( $wp_style->handle );
+                }
+            }
+        }
+
         \wp_enqueue_style( 'wpm-sil', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap', false, false, 'all' );
         \wp_enqueue_style( 'wpm-sil-style', \plugins_url( '/assets/style.css', \dirname( __FILE__ ) ), false, false, 'all' );
     }

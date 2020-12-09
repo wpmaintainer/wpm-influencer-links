@@ -14,31 +14,6 @@ $links = new \WP_Query([
     ]
 ]);
 
-if ( \get_field( 'wpmll_opt_disable_hooks' ) ) 
-{
-    \add_action( 'wp_enqueue_scripts', function(){
-        $wp_scripts = \wp_scripts();
-        $wp_styles = \wp_styles();
-
-        foreach ( $wp_scripts->registered as $wp_script )
-        {
-            if ( 'wpm-sil' !== \substr( $wp_script->handle, 0, 7 ) )
-            {
-                \wp_deregister_script( $wp_script->handle );
-            }
-        }
-
-        foreach ( $wp_styles->registered as $wp_style ) 
-        {
-            if ( 'wpm-sil' !== \substr( $wp_style->handle, 0, 7 ) )
-            {
-                wp_deregister_style( $wp_style->handle );
-            }
-        }
-
-    }, 9999 );
-}
-
 $theme = \get_field( 'wpmll_opt_theme' ) == 'Dark' ? 'dark' : 'light';
 
 ?>
@@ -51,7 +26,6 @@ $theme = \get_field( 'wpmll_opt_theme' ) == 'Dark' ? 'dark' : 'light';
 
     <?php
         \wp_head(); 
-
         echo \get_field( 'wpmll_opt_embed-head' ); 
     ?>
 
@@ -72,9 +46,7 @@ $theme = \get_field( 'wpmll_opt_theme' ) == 'Dark' ? 'dark' : 'light';
 <body class="wpm-ll-body wpm-ll-body-<?php echo \esc_attr( $theme ); ?>">
 
     <?php
-        if ( $enable_hooks ) 
-            \wp_body_open(); 
-
+        \wp_body_open(); 
         echo \get_field( 'wpmll_opt_embed-body' );
     ?>
 
@@ -159,21 +131,20 @@ $theme = \get_field( 'wpmll_opt_theme' ) == 'Dark' ? 'dark' : 'light';
 
             </div>
         </footer>
+        <?php if ( \get_field( 'wpmll_opt_builtwith' ) ) : ?>
         <div class="wpm-ll-built">
             <p>
                 Generated with <a href="https://wpmaintainer.com">Social Influencer Links</a> 
                 plugin from <a href="https://wpmaintainer.com" target="_blank">WP Maintainer</a>.
             </p>
         </div>
-        <?php if ( \current_user_can( 'edit_page' ) ) : ?>
-        <div class="wpm-ll-edit"><?php \edit_post_link( 'Edit This Page' ); ?></div>
+        <?php endif; if ( \current_user_can( 'edit_page' ) ) : ?>
+        <div class="wpm-ll-edit"><p><?php \edit_post_link( 'Edit This Page' ); ?></p></div>
         <?php endif; ?>
     </section>
 
     <?php
-        if ( $enable_hooks ) 
-            \wp_footer(); 
-
+        \wp_footer(); 
         echo \get_field( 'wpmll_opt_embed-footer' ); 
     ?> 
 
