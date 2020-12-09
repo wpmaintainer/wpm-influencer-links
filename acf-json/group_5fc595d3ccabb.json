@@ -26,7 +26,7 @@
             "label": "Share the Love",
             "name": "wpmll_opt_builtwith",
             "type": "true_false",
-            "instructions": "Check this box to share the love and let the world know you're using our plugin!",
+            "instructions": "<label for=\"acf-field_5fd029c572b68\" style=\"display:block; font-weight: normal; background:url('\/wp-content\/plugins\/wpm-influencer-links\/assets\/arrow.svg') 0 0 no-repeat;background-size: 40px 40px;\"><span style=\"display:block;padding: 1em 0 1em 46px;\"><b style=\"color:#0682B8;\">Check this box<\/b> to share the love and let the world know you're using our plugin!<\/span><\/label>",
             "required": 0,
             "conditional_logic": [
                 [
@@ -402,5 +402,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1607477782
+    "modified": 1607478669
 }

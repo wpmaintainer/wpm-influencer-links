@@ -2,6 +2,7 @@
 /*
 Template: WPM Social Influencer Links Template
 */
+\show_admin_bar( false );
 \the_post();
 
 $links = new \WP_Query([

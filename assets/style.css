@@ -7,6 +7,7 @@ section#wpm-ll-main header .wpm-ll-thumb { margin: 1em auto;  }
 section#wpm-ll-main header .wpm-ll-thumb img { border-radius: 50%; border: .5em solid #fff; }
 body.wpm-ll-body-dark section#wpm-ll-main header .wpm-ll-thumb img { border: .5em solid #efefef; border-color: rgba(255,255,255,.875); }
 section#wpm-ll-main h1 { font-size: 2em; margin: 0; }
+section#wpm-ll-main p { margin: 1em 0; }
 section#wpm-ll-main article ol.wpm-ll-links { list-style-type: none; }
 section#wpm-ll-main article ol.wpm-ll-links li { margin: 1em auto; }
 section#wpm-ll-main article ol.wpm-ll-links li a { font-size: 20px; font-weight: bold; color: #fff; background: #0682B8; padding: .67em 3em; display: block; text-decoration: none; border-radius: 7px; }
