@@ -34,7 +34,7 @@ class Influencer_Links
         \add_action( 'init', [ $this, 'register' ], 10 );
         \add_filter( 'template_include', [ $this, 'template_include' ], 10 );
         \add_filter( 'admin_notices', [ $this, 'admin_notices' ], 999 );
-        \add_filter( 'wp_enqueue_scripts', [ $this, 'wp_enqueue_scripts' ], 10 );
+        \add_filter( 'wp_enqueue_scripts', [ $this, 'wp_enqueue_scripts' ], 9999 );
     }
 
     public function wp_enqueue_scripts()
