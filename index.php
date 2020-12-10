@@ -4,7 +4,7 @@ Plugin Name: Social Influencer Links
 Description: Create a landing page of links for quick use on social media profiles, like Instagram.
 Author: WP Maintainer
 Author URI: https://wpmaintainer.com/products/landing-links/
-Version: 0.1.1
+Version: 0.2
 */
 
 if ( !\defined( 'ABSPATH' ) ) return;

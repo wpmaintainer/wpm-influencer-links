@@ -3,7 +3,7 @@ Contributors: theandystratton, wpmaintainer
 Tags: instagram, social media, influencer, influencer links, landing page, link landing page, link page
 Requires at least: 5.0
 Tested up to: 5.6
-Stable tag: 0.1
+Stable tag: trunk
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -56,6 +56,9 @@ Add and edit your links under the "Influencer Links" post type. Links are sorted
 4. Example page with a dark theme.
 
 == Changelog ==
+
+= 0.2 =
+* Administrative clean up.
 
 = 0.1.1 =
 * Allow PHP 7.2; testing up to WP 5.6
