@@ -57,6 +57,9 @@ Add and edit your links under the "Influencer Links" post type. Links are sorted
 
 == Changelog ==
 
+= 0.2.1 =
+* Fixes a CSS de-register bug.
+
 = 0.2 =
 * Administrative clean up.
 
