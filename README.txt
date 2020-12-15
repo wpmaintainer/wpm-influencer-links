@@ -1,6 +1,6 @@
 === Social Influencer Links ===
 Contributors: theandystratton, wpmaintainer
-Tags: instagram, social media, influencer, influencer links, landing page, link landing page, link page
+Tags: instagram, social media, influencer, influencer links, landing page, link landing page, link page, link tree, linktree
 Requires at least: 5.0
 Tested up to: 5.6
 Stable tag: trunk
@@ -8,7 +8,7 @@ Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Create your own hosted social media link landing page that can display a micro-profile, list of link buttons, and social media properties for your brand/influencer profiles.
+Create your own hosted social media link landing page (similar to Linktree™) that can display a micro-profile, list of link buttons, and social media properties for your brand/influencer profiles.
 
 == Description ==
 
