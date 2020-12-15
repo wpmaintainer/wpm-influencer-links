@@ -24,6 +24,8 @@ $theme = \get_field( 'wpmll_opt_theme' ) == 'Dark' ? 'dark' : 'light';
 <head>
     <title><?php \wp_title( '' ); ?></title>
     
+    <meta name="viewport" content="width=device-width"/>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <?php
