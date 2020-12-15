@@ -138,7 +138,7 @@ $theme = \get_field( 'wpmll_opt_theme' ) == 'Dark' ? 'dark' : 'light';
         <?php if ( \get_field( 'wpmll_opt_builtwith' ) ) : ?>
         <div class="wpm-ll-built">
             <p>
-                Generated with <a href="https://wpmaintainer.com">Social Influencer Links</a> 
+                Generated with <a href="https://wordpress.org/plugins/social-influencer-links/">Social Influencer Links</a> 
                 plugin from <a href="https://wpmaintainer.com" target="_blank">WP Maintainer</a>.
             </p>
         </div>
